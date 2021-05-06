@@ -4,6 +4,7 @@ import Logo from '../../assets/images/Logo.png';
 
 export const Container = styled.div`
   display: flex;
+  font-family: system-ui;
 `;
 
 export const ContainerEsquerdo = styled.div`
@@ -34,16 +35,20 @@ export const InputLogin = styled.input`
   opacity: 1;
   width: 647px;
   height: 91px;
-
+  color: #2d62ed;
+  text-decoration: none;
   font: normal normal bold 18px/27px Poppins;
   letter-spacing: 0px;
   color: #2d62ed;
   opacity: 1;
   padding-left: 25px;
+  font-family: system-ui;
+
   ::-ms-input-placeholder {
     color: #2d62ed;
   }
   ::placeholder {
+    font-family: system-ui;
     color: #2d62ed;
   }
 `;
@@ -56,16 +61,19 @@ export const InputSenha = styled.input`
   width: 647px;
   height: 91px;
   color: #2d62ed;
-
+  text-decoration: none;
   font: normal normal bold 18px/27px Poppins;
   letter-spacing: 0px;
   color: #2d62ed;
   opacity: 1;
   padding-left: 25px;
+  font-family: system-ui;
+
   ::-ms-input-placeholder {
     color: #2d62ed;
   }
   ::placeholder {
+    font-family: system-ui;
     color: #2d62ed;
   }
 `;
@@ -115,4 +123,5 @@ export const TextContainer = styled.div`
   letter-spacing: 0px;
   color: #2d62ed;
   opacity: 1;
+  font-family: system-ui;
 `;

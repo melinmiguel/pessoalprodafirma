@@ -31,7 +31,7 @@ const TemplatePage: React.FC<TemplatePageProps> = ({
           Faça seu login abaixo.
         </TextContainer>
         <InputLogin placeholder="Login" />
-        <InputSenha placeholder="Senha" />
+        <InputSenha type="password" placeholder="Senha" />
         <BotaoEntrar>ENTRAR</BotaoEntrar>
         <TextContainer>
           2021™ Itools. Todos os direitos reservados.
