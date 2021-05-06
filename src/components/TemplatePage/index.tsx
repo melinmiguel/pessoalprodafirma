@@ -2,11 +2,13 @@ import React from 'react';
 import ReactHtmlParser from 'react-html-parser';
 import {
   Container,
-  BaseContent,
-  HeaderWrapper,
-  ContentWrapper,
-  Title,
-  Subtitle,
+  ContainerEsquerdo,
+  ContainerDireito,
+  LogoContainer,
+  InputLogin,
+  InputSenha,
+  BotaoEntrar,
+  TextContainer,
 } from './styles';
 
 interface TemplatePageProps {
@@ -21,13 +23,22 @@ const TemplatePage: React.FC<TemplatePageProps> = ({
 }) => {
   return (
     <Container>
-      <BaseContent>
-        <HeaderWrapper>
-          <Title>{title}</Title>
-          <Subtitle>{ReactHtmlParser(subtitle)}</Subtitle>
-        </HeaderWrapper>
-        <ContentWrapper>{children}</ContentWrapper>
-      </BaseContent>
+      <ContainerEsquerdo>
+        <LogoContainer />
+        <TextContainer>
+          Bem Vindo a área de administração.
+          <br />
+          Faça seu login abaixo.
+        </TextContainer>
+        <InputLogin placeholder="Login" />
+        <InputSenha placeholder="Senha" />
+        <BotaoEntrar>ENTRAR</BotaoEntrar>
+        <TextContainer>
+          2021™ Itools. Todos os direitos reservados.
+        </TextContainer>
+      </ContainerEsquerdo>
+
+      <ContainerDireito />
     </Container>
   );
 };

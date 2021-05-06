@@ -1,54 +1,84 @@
 import styled from 'styled-components';
-import theme from '../../styles/theme';
+import imagemLateralPNG from '../../assets/images/imagemLateral.png';
+import Logo from '../../assets/images/Logo.png';
 
 export const Container = styled.div`
   display: flex;
+`;
+
+export const ContainerEsquerdo = styled.div`
+  width: 50vw;
   align-items: center;
   justify-content: center;
-
-  margin-top: 46px;
+  display: inline-grid; //alterar para box e ajustar nas margens.
+  grid: auto;
 `;
 
-export const BaseContent = styled.div`
-  max-width: 1008px;
-  min-width: 1008px;
+export const LogoContainer = styled.div`
+  background-image: url(${Logo});
+  width: 150px;
+  height: 150px;
+  margin-left: 25vh;
+`;
 
-  background: ${theme.pureWhite};
-  min-height: 516px;
+export const ContainerDireito = styled.div`
+  width: 50vw;
+  height: 100vh;
+  background-image: url(${imagemLateralPNG});
+`;
 
-  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.107845);
+export const InputLogin = styled.input`
+  background: #ffffff 0% 0% no-repeat padding-box;
+  border: 1px solid #2d62ed;
+  border-radius: 6px;
+  opacity: 1;
+  width: 647px;
+  height: 91px;
+
+  font: normal normal bold 18px/27px Poppins;
+  letter-spacing: 0px;
+  color: #2d62ed;
+  opacity: 1;
+  padding-left: 25px;
+`;
+
+export const InputSenha = styled.input`
+  background: #ffffff 0% 0% no-repeat padding-box;
+  border: 1px solid #2d62ed;
+  border-radius: 6px;
+  opacity: 1;
+  width: 647px;
+  height: 91px;
+  color: #2d62ed;
+
+  font: normal normal bold 18px/27px Poppins;
+  letter-spacing: 0px;
+  color: #2d62ed;
+  opacity: 1;
+  padding-left: 25px;
+`;
+
+export const BotaoEntrar = styled.button`
+  background: #2d62ed 0% 0% no-repeat padding-box;
   border-radius: 4px;
-  margin-bottom: 48px;
+  opacity: 1;
+  width: 672px;
+  height: 91px;
 
-  display: flex;
-  flex-direction: column;
+  text-align: center;
+  font: normal normal bold 26px/39px Poppins;
+  letter-spacing: 0px;
+  color: #ffffff;
+  opacity: 1;
 `;
 
-export const Title = styled.h1`
-  font-weight: 700;
-  font-size: 24px;
-  line-height: 36px;
-
-  color: ${theme.defaultGreen};
-`;
-
-export const Subtitle = styled.p`
-  font-weight: 300;
-  font-size: 14px;
-  line-height: 21px;
-  padding-top: 4px;
-
-  color: ${theme.textParagraph};
-  mix-blend-mode: normal;
-`;
-
-export const HeaderWrapper = styled.div`
-  padding: 24px 24px 32px 24px;
-`;
-
-export const ContentWrapper = styled.div`
-  flex: 1;
-  display: flex;
-  justify-content: flex-start;
-  flex-direction: column;
+export const TextContainer = styled.div`
+  position: relative;
+  width: 672px;
+  height: 91px;
+  text-align: center;
+  font: normal normal 600 26px/39px Poppins;
+  letter-spacing: 0px;
+  color: #2d62ed;
+  opacity: 1;
 `;

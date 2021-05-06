@@ -2,7 +2,7 @@ import styled from 'styled-components';
 import theme from '../../styles/theme';
 
 export const Container = styled.div`
-  position: relative;
+  /* position: relative;
   width: 960px;
   margin: 100px auto;
   min-height: 60vh;
@@ -31,7 +31,7 @@ export const Container = styled.div`
 
   a {
     margin-top: 30px;
-  }
+  } */
 `;
 
 export const Card = styled.div`
