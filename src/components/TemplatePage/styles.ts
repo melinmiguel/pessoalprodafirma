@@ -24,7 +24,7 @@ export const LogoContainer = styled.div`
 
 export const ContainerDireito = styled.div`
   width: 50vw;
-  height: 100vh;
+  height: 965px;
   background-image: url(${imagemLateralPNG});
 `;
 
