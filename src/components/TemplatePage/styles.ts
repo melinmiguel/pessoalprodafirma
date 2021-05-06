@@ -40,6 +40,12 @@ export const InputLogin = styled.input`
   color: #2d62ed;
   opacity: 1;
   padding-left: 25px;
+  ::-ms-input-placeholder {
+    color: #2d62ed;
+  }
+  ::placeholder {
+    color: #2d62ed;
+  }
 `;
 
 export const InputSenha = styled.input`
@@ -56,6 +62,12 @@ export const InputSenha = styled.input`
   color: #2d62ed;
   opacity: 1;
   padding-left: 25px;
+  ::-ms-input-placeholder {
+    color: #2d62ed;
+  }
+  ::placeholder {
+    color: #2d62ed;
+  }
 `;
 
 export const BotaoEntrar = styled.button`
