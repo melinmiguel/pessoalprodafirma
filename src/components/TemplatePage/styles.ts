@@ -5,10 +5,13 @@ import Logo from '../../assets/images/Logo.png';
 export const Container = styled.div`
   display: flex;
   font-family: system-ui;
+  margin: 0px;
+  padding: 0px;
 `;
 
 export const ContainerEsquerdo = styled.div`
   width: 50vw;
+  margin: 0px;
   align-items: center;
   justify-content: center;
   display: inline-grid; //alterar para box e ajustar nas margens.

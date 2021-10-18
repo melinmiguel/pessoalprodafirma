@@ -1,5 +1,6 @@
 import React from 'react';
 import ReactHtmlParser from 'react-html-parser';
+import global from '../../styles/global';
 import {
   Container,
   ContainerEsquerdo,

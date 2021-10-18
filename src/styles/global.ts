@@ -1,13 +1,14 @@
 ﻿import { createGlobalStyle } from 'styled-components';
 import theme from './theme';
 
-export default createGlobalStyle`
+const GlobalStyle = createGlobalStyle`
 
   * {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-    outline: 0
+    outline: 0;
+    background-color: ${theme.verdeCinebras};
   }
 
   body {
@@ -16,6 +17,10 @@ export default createGlobalStyle`
     background: ${theme.background};
     -webkit-font-smoothing: antialiased;
     min-height: 100vh;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    outline: 0
   }
 
   button {
@@ -83,3 +88,4 @@ export default createGlobalStyle`
 
 
 `;
+export default GlobalStyle;
