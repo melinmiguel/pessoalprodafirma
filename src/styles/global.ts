@@ -8,7 +8,7 @@ const GlobalStyle = createGlobalStyle`
     margin: 0;
     box-sizing: border-box;
     outline: 0;
-    background-color: ${theme.verdeCinebras};
+    //background-color: ${theme.verdeCinebras};
   }
 
   body {
